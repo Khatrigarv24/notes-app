@@ -6,7 +6,7 @@ import appRouter from "../api";
 
 
 export async function BootstrapServer(app: Hono) {
-  app.use(cors());
+  app.use('*', cors());
   app.use(csrf());
   app.use(secureHeaders());
 
