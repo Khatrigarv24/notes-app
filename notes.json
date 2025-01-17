@@ -1,15 +1,7 @@
 [
   {
-    "id": 1,
-    "title": "Bobby Hadz",
-    "salary": 50,
-    "years": [2022, 2023, 2024]
-  },
-
-  {
-    "id": 2,
-    "title": "Bobby harry",
-    "salary": 70,
-    "years": [2021, 2012, 2020]
+    "id": "01JHTBDBG8ZXC0RVYQDZXW2QKT",
+    "title": "hello",
+    "content": "hola mi amigo"
   }
-] 
+]
