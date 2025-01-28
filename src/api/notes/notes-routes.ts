@@ -1,17 +1,15 @@
 import { Hono } from "hono";
-import { 
-    handlecreateNewNote,
-    // getAllNotes,
-    handlegetNoteByID,
-    // readNote,
-    handledeleteNote,
-    handleUpdateNote} from "./notes-controller";
+import {
+  handleCreateNewNote,
+  handleGetNoteByID,
+  handleDeleteNote,
+  handleUpdateNote,
+} from "./notes-controller";
 
 const notesRouter = new Hono();
 
-notesRouter.post("/notes/create/", handlecreateNewNote);
-notesRouter.post("/notes/:id", handleUpdateNote);
-notesRouter.delete("/notes/:id", handledeleteNote);
-notesRouter.get("/notes/:id", handlegetNoteByID);
+notesRouter.post("/create/", handleCreateNewNote);
+notesRouter.put("/notes/:id", handleUpdateNote);
+notesRouter.delete("/notes/:id", handleDeleteNote);
+notesRouter.get("/notes/:id", handleGetNoteByID);
 export default notesRouter;
-
